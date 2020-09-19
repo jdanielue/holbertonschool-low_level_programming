@@ -1,5 +1,7 @@
 #include <stdio.h>
-/* first code in C */
+/*
+ * Comment
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
