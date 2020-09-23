@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- *_print_sign - progam return1 for alpha case
+ *print_sign - progam return1 for alpha case
  *@n: Value of input
  *Return: 1 or 0
  *
