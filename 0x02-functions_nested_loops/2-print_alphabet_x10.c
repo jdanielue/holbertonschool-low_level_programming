@@ -2,18 +2,21 @@
 #include <stdio.h>
 
 /**
- *print_alphabet - program
+ *print_alphabet_x10 - program
  *return: 0
  *
 */
 
 void print_alphabet_x10(void)
 {
-	char i;
+	char i, j;
 
-	for (i = 'a' ; i <= 'z' ; i++)
+	for (j = 0 ; j <= 9 ; j++)
 	{
+		for (i = 'a' ; i <= 'z' ; i++)
+		{
 		_putchar(i);
-	}
+		}
 	_putchar('\n');
+	}
 }
