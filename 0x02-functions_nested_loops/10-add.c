@@ -2,9 +2,10 @@
 #include "holberton.h"
 
 /**
- *print_last_digit - progam return1 for alpha case
- *@n: Value of input
- *Return: 1 or 0
+ *add - progam return1 for alpha case
+ *@a: Value of input
+ *@b: value of input
+ *Return: suma
  *
  */
 
