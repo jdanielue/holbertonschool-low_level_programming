@@ -1,20 +1,18 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- *print_most_numbers - check if is a digit.
+ *print_numbers - print numbers of 0 to 9
+ * @void: no parameter
  *
- * @c : integer
- *
- *
- */
-
-void print_most_numbers(void)
+ * Return: not return
+ **/
+void print_numbers(void)
 {
-	int c;
+	int i;
 
-	for (c = 0; c <= 9 && c != 2 && c != 4; c++);
+	for (i = '0'; i <= '9'; i++)
 	{
-		_putchar(c);
+		_putchar(i);
 	}
+	_putchar('\n');
 }
