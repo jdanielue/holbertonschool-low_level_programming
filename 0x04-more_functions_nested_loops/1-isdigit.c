@@ -4,7 +4,7 @@
 /**
  *_isdigit - check if is a digit.
  *
- * Return: Always 1.
+ * Return: Always 1 or 0.
  *@c : int character
  */
 
