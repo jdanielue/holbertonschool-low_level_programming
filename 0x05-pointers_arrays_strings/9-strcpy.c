@@ -2,21 +2,23 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * *_strcpy - check the code for Holberton School students.
+ *@dest : destination pointer
+ *@src : source pointer
+ * Return: Always dest
  */
 char *_strcpy(char *dest, char *src)
 {
 	int c, i;
 
-	for (i = 0; src[i] != '\0' ;i++ )
+	for (i = 0; src[i] != '\0'; i++)
 	{
 	}
 	c = i;
+
 	for (i = 0; i <= c; i++)
-		{
-			dest[i] = src[i];
-		}
+	{
+		dest[i] = src[i];
+	}
 	return (dest);
 }
