@@ -13,9 +13,9 @@ void reverse_array(int *a, int n)
 	int aaux[1000];
 	int i;
 
-	for (i = 0; i < n; i++) /* porque no me entra al ciclo cuando escribo a[i] != '\0'  */
+	for (i = 0; i < n; i++)
 	{
-		aaux[i] = a[i];
+	aaux[i] = a[i];
 	}
 	for (i = n; i > 0; i--)
 	{
