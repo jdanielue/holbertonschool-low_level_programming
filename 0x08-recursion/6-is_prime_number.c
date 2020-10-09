@@ -3,6 +3,7 @@
  * is_prime_number - returns the length of a string
  * primo - function that helps to find the prime number
  * @n: constant value to finde the natural square root
+ * @x: variable that help to find primes numbers
  * Return: _help
  *
  */
