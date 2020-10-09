@@ -1,6 +1,4 @@
 #include "holberton.h"
-
-int primo(int n, int x);
 /**
  * is_prime_number - returns the length of a string
  * primo - function that helps to find the prime number
@@ -8,6 +6,9 @@ int primo(int n, int x);
  * Return: _help
  *
  */
+
+int primo(int n, int x);
+
 
 int is_prime_number(int n)
 {
