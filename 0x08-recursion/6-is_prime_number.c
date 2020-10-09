@@ -1,9 +1,8 @@
 #include "holberton.h"
 /**
  * is_prime_number - returns the length of a string
- * primo - function that helps to find the prime number
  * @n: constant value to finde the natural square root
- * @x: variable that help to find primes numbers
+ * @x: variable that help to find primes number
  * Return: _help
  *
  */
@@ -22,6 +21,13 @@ int is_prime_number(int n)
 		return (primo(n, 1));
 	}
 }
+/**
+ * primo - function that helps to find the prime number
+ * @n: constant value to finde the natural square root
+ * @x: variable that help to find primes numbers
+ * Return: _help
+ *
+ */
 int primo(int n, int x)
 {
 	int prueba;
