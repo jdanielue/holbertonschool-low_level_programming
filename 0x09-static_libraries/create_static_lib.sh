@@ -1,4 +1,6 @@
 #!/bin/bash
-gcc -c *.c
-ar -rc liball.a *.o
-ranlib liball.a
+gcc -c *.c &
+wait $!
+ar -rc liball.a *.o &
+wait $!
+ranlib liball.a &
