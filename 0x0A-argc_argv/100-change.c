@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 
 		for (i = 0; i < 5; i++)
 		{
-			for (n = n - coin[i]; n - coin[i] >= 0;monedas++)
+			for (n = n - coin[i]; n - coin[i] >= 0; monedas++)
 			{
 			}
 		}
