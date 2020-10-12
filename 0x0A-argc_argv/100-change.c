@@ -1,18 +1,18 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to make change for money
- * @argc: parameter
+ * main - calculate amount of coins used as change
+ *
+ * @argc: - Entry parameter, changed after with n
  * @argv: Array of arguments
  *
- * Return: 0 success, 1 Error
+ * Return: 0 success, 1 otherwise
  */
 
 int main(int argc, char **argv)
 {
-	int n, i;
-	int monedas, coin[5] = {25, 10, 5, 2, 1};
+	int n, i, coins, coin[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -30,12 +30,14 @@ int main(int argc, char **argv)
 
 		for (i = 0; i < 5; i++)
 		{
-			for (n = n - coin[i]; n - coin[i] >= 0; monedas++)
+			while (n - coin[i] >= 0)
 			{
+				n = n - coin[i];
+				coins++;
 			}
 		}
 
-		printf("%d\n", monedas);
+		printf("%d\n", coins);
 		return (0);
 	}
 }
