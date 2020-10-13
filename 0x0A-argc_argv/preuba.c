@@ -12,29 +12,18 @@
 
 int main(int argc, char *argv[])
 {
-	int a, i, x;
+	int i, result;
 
-	a = 0;
-
-	for (x = 0; x <= argc; x++)
-	{
-		a++;
-	}
-	printf("numero de strings %d\n", a);
-
-/*
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
-		{
-			a = a + atoi((argv[i]));
-		}
-		printf("%d\n", a);
+		result = atoi((argv[i - 2])) + atoi(argv[i - 1]);
+		printf("%d\n", result);
+		return (0);
 	}
 	else
 	{
 		printf("0\n");
 	}
-		return (0);
-*/
+	return (0);
 }
