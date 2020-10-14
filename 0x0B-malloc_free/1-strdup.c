@@ -4,11 +4,10 @@
 
 
 /**
- * create_array - prints buffer in hexa
- * @c: the address of memory to print
- * @size: the size of the memory to print
+ * _strdup - returns a pointer to a newly allocated space.
+ * @str: the address of memory to print
  *
- * Return: Nothing.
+ * Return: t.
  */
 char *_strdup(char *str)
 {
@@ -23,7 +22,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	n = n + 1;
-	t= malloc(n);
+	t = malloc(n);
 	if (t == NULL)
 		return (NULL);
 	for (j = 0; j <= n; j++)
