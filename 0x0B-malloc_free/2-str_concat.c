@@ -4,30 +4,33 @@
 
 
 /**
- * _strdup - returns a pointer to a newly allocated space.
- * @str: the address of memory to print
- *
+ * str_concat - function that returns a pointer
+ * @s1: first text
+ * @s2: second text
  * Return: t.
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-	char *t;
-	int n, j;
 
-	for (n = 0; str[n] != '\0'; n++)
+	int i, n, j, k;
+	char *t;
+
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 	}
-	if (n <= 0)
+	for (n = 0; s2[n] != '\0'; n++)
 	{
+	}
+	t = malloc(n + i);
+	if (i == 0 || n == 0)
 		return (NULL);
-	}
-	n = n + 1;
-	t = malloc(n);
-	if (t == NULL)
-		return (NULL);
-	for (j = 0; j <= n; j++)
+	for (j = 0; j <= i; j++)
 	{
-		t[j] = str[j];
+		t[j] = s1[j];
 	}
-return (t);
+	for (k = 0; k <= n; k++)
+	{
+		t[i + k] = s2[k];
+	}
+	return (t);
 }
