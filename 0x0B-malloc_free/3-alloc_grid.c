@@ -4,30 +4,31 @@
 
 
 /**
- * _strdup - returns a pointer to a newly allocated space.
- * @str: the address of memory to print
- *
+ * alloc_grid - function that returns a pointer
+ * @width: width
+ * @height: height
  * Return: t.
  */
-char *_strdup(char *str)
+int **alloc_grid(int width, int height)
 {
-	char *t;
-	int n, j;
 
-	for (n = 0; str[n] != '\0'; n++)
+	int i, n;
+	int *t;
+
+	for (i = 0; i < width; i++)
 	{
 	}
-	if (n <= 0)
+	for (n = 0; n < height; n++)
 	{
+	}
+	t = malloc((i * sizeof(int) * n);
+	if (t == NULL || i == NULL)
 		return (NULL);
-	}
-	n = n + 1;
-	t = malloc(n);
-	if (t == NULL)
-		return (NULL);
-	for (j = 0; j <= n; j++)
+	for (j = 0; j <= i; j++)
 	{
-		t[j] = str[j];
+		for (k = 0; k <= n; k++)
+		{
+		}
 	}
-return (t);
+	return (t);
 }
