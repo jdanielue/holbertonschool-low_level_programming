@@ -13,13 +13,15 @@
  */
 int *array_range(int min, int max)
 {
-	int i, n = 0, *p;
+	int i, *p, n;
+
+	n = 0;
 
 	if (min > max)
 		return (NULL);
 	if (max >= min)
 	{
-		p = malloc(300);
+		p = malloc(100);
 	}
 	if (p == NULL)
 	{
@@ -28,7 +30,7 @@ int *array_range(int min, int max)
 
 	for (i = min; i <= max; i++)
 	{
-		p[n + 1] = min + 1;
+		p[n] = min + n;
 		n++;
 	}
 	free(p);
