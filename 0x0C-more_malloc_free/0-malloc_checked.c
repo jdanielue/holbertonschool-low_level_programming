@@ -4,15 +4,15 @@
 
 /**
  * malloc_checked - check the code for Holberton School students.
- *
- * Return: no return.
+ *@b: entrance infromation size malloc
+ * Return: l.
  */
 void *malloc_checked(unsigned int b)
 {
 	void *l;
 
-	l =  malloc (b);
-	if ( l == NULL)
+	l = malloc (b);
+	if (l == NULL)
 	{
 	exit(98);
 	}
