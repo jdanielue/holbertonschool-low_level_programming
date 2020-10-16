@@ -44,11 +44,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p = malloc(300);
 	}
-	for (m = 0; m <= i; m++)
+	for (m = 0; m < i; m++)
 	{
 		p[m] = s1[m];
 	}
-	for (t = 0; t <= (n + i); t++)
+	for (t = 0; t < n; t++)
 	{
 	p[t + m] = s2[t];
 	}
