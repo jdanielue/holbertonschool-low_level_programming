@@ -30,9 +30,8 @@ int *array_range(int min, int max)
 
 	for (i = min; i <= max; i++)
 	{
-		p[n] = min + n;
+		p[n] = n;
 		n++;
 	}
-	free(p);
 	return (p);
 }
