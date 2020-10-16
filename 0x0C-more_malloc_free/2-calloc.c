@@ -11,6 +11,11 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
-	unsigned int i;
 
+	p = calloc(nmemb, size);
+	if (p == NULL)
+	{
+		return (NULL);
+	}
+	return (p);
 }
