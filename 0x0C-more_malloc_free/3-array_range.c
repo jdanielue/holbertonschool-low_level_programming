@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	else
+	if
 	{
 		p = malloc(300);
 	}
@@ -31,7 +31,7 @@ int *array_range(int min, int max)
 
 	for (i = min; i <= max; i++)
 	{
-		p[n] = min +n;
+		p[n] = min + n;
 		n++;
 	}
 	return (p);
