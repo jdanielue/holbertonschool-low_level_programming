@@ -38,12 +38,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= j)
 	{
 
-		p = malloc(n + i);
+		p = malloc(n);
 	}
 	else
 	{
 		n = j;
-		p = malloc(n + i);
+		p = malloc(n);
 	}
 	if (p == NULL)
 		return (NULL);
