@@ -26,7 +26,7 @@ int *array_range(int min, int max)
 	}
 	if (p == NULL)
 	{
-		p = calloc( 0, void)
+		return (NULL);
 	}
 
 	for (i = min; i <= max; i++)
