@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -44,7 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p = malloc(n + i);
 	}
-	if ( p =NULL)
+	if ( p == NULL)
 		return (NULL);
 	for (m = 0; m < i; m++)
 	{
