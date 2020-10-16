@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	if
+	if (min <= max)
 	{
 		p = malloc(300);
 	}
