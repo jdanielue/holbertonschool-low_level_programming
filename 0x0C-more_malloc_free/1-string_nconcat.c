@@ -5,7 +5,7 @@
 /**
  * length - check the code for Holberton School students.
  *@s: imput 1
- * Return: Always str.
+ * Return: Always something.
  */
 
 int length(char *s)
