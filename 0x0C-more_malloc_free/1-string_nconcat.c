@@ -10,13 +10,12 @@
 
 int length(char *s)
 {
-	int i, str;
+	int z;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (z = 0; s[z] != '\0'; z++)
 	{
-		str++;
 	}
-	return (str);
+	return (z);
 }
 
 
@@ -29,21 +28,21 @@ int length(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, m, t;
+	unsigned int i = 0, j = 0, m = 0, t = 0;
 	char *p;
 
-	i = length(s1);
-	j = length(s2);
+	i = length(s2);
+	j = length(s1);
 
-	if (n >= j)
+	if (n <= j)
 	{
-
-		p = malloc(n);
+		j = n;
+		p = malloc(n + i);
 	}
 	else
 	{
 		n = j;
-		p = malloc(n);
+		p = malloc(n + i);
 	}
 	if (p == NULL)
 		return (NULL);
@@ -51,10 +50,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[m] = s1[m];
 	}
-	for (t = 0; t < n; t++)
+	for (t = 0; t <= n; t++)
 	{
 	p[t + m] = s2[t];
 	}
-	p[t + m + 1] = '\0';
 	return (p);
 }
