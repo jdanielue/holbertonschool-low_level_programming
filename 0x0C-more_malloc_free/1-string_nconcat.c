@@ -34,11 +34,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	j = length(s2);
 	i = length(s1);
-	if (s1 == 0)
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	if (s2 == 0)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
