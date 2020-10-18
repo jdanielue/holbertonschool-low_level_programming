@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *t;
 	int n, j;
 
-	if (*str == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	for (n = 0; str[n] != '\0'; n++)
