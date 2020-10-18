@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 	int i, n, j, k;
 	char *t;
 
-	if ( s1 == NULL)
+	if (s1 == NULL)
 		return(NULL);
 	if (s2 == NULL)
 		return(NULL);
@@ -38,6 +38,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		t[i + k] = s2[k];
 	}
-	putchar('\0');
+	_putchar('\0');
 	return (t);
 }
