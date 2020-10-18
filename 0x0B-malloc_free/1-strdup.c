@@ -14,8 +14,6 @@ char *_strdup(char *str)
 	char *t;
 	int n, j;
 
-	if (str = "")
-		return (NULL);
 	if (str == NULL)
 		return (NULL);
 
@@ -34,5 +32,6 @@ char *_strdup(char *str)
 	{
 		t[j] = str[j];
 	}
+	free(t);
 return (t);
 }
