@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,14 +30,14 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	if (t == NULL)
 	return (NULL);
-	for (j = 0; j <= i; j++)
+	for (j = 0; j < i; j++)
 	{
 		t[j] = s1[j];
 	}
-	for (k = 0; k <= n; k++)
+	for (k = 0; k < n; k++)
 	{
 		t[i + k] = s2[k];
 	}
-	_putchar('\0');
+	putchar('\0');
 	return (t);
 }
