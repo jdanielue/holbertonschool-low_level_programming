@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -32,6 +32,5 @@ char *_strdup(char *str)
 	{
 		t[j] = str[j];
 	}
-	
 return (t);
 }
