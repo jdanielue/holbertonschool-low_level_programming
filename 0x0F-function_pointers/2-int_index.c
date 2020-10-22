@@ -17,10 +17,10 @@ int i, v;
 	if (cmp == NULL)
 	{
 	}
-	elseif (array == NULL)
+	else if (array == NULL)
 	{
 	}
-	elseif (size <= 0)
+	else if (size <= 0)
 	{
 	}
 	else
