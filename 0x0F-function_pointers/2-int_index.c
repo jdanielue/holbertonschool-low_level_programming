@@ -16,11 +16,9 @@ int i, v;
 
 	if (cmp == NULL)
 	{
-		
 	}
 	if (array == NULL)
 	{
-		
 	}
 	if (size <= 0)
 	return (-1);
