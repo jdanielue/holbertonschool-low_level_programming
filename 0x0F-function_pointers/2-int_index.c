@@ -16,9 +16,11 @@ int i, v;
 
 	if (cmp == NULL)
 	{
+		return(-1);
 	}
 	if (array == NULL)
 	{
+		return(-1);
 	}
 	if (size <= 0)
 	return (-1);
@@ -31,5 +33,5 @@ int i, v;
 			return (i);
 		}
 	}
-	return (-1);
+	return (0);
 }
