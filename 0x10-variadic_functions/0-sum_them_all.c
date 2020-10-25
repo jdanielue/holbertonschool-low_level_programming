@@ -17,11 +17,11 @@ va_list ad;
 unsigned int i;
 
 va_start(ad, n);
-for(i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 	{
 	val += va_arg(ad, int);
 	}
 va_end(ad);
 
-return val;
+return (val);
 }
