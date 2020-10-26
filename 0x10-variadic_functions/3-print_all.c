@@ -40,7 +40,7 @@ while (format[n] != '\0')
 		break;
 	}
 	}
-	else
+	if (n != 0)
 	{
 		switch (*(format + n))
 	{
