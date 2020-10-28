@@ -4,8 +4,8 @@
 /**
  * GET_OP_FUNC - Struct op
  *
- * @op: The operator
- * @f: The function associated
+ * @a: The operator
+ * @b: The function associated
  */
 
 
@@ -34,9 +34,4 @@ int op_div(int a, int b)
 int op_mod(int a, int b)
 {
 	return (a % b);
-}
-
-
-
-
 }
