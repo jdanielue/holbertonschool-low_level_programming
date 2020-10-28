@@ -3,9 +3,9 @@
 
 /**
  *main - main
- *@i : counter
  *@argc: counts strings
  *@argv: pointer to strings
+ *Return: void
  */
 
 int main(int argc, char *argv[])

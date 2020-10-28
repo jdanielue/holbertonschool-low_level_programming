@@ -2,10 +2,9 @@
 #include "3-calc.h"
 
 /**
- * GET_OP_FUNC - Struct op
- *
- * @op: The operator
- * @f: The function associated
+ *get_op_func - Struct op
+ *@s: The operator
+ *Return: the operator
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -21,15 +20,15 @@ op_t ops[] = {
 
 int i;
 
- i = 0;
- 
- while (i < 6)
+i = 0;
+
+while (i < 6)
 {
 	if (s[0] == ops[i].op[0])
 	{
 		return (ops[i].f);
 	}
-    i++;
+i++;
 }
 return (NULL);
 }
