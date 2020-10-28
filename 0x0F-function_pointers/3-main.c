@@ -4,29 +4,29 @@
 /**
  *main - main
  *@i : counter
- *
- *
+ *@argc: counts strings
+ *@argv: pointer to strings
  */
 
 int main(int argc, char *argv[])
 {
 int c, d;
 
-	if ( argc != 4)
+	if (argc != 4)
 		{
 		printf("Error\n");
-		return(98);
+		return (98);
 		}
-	if ( (argv[2]) == NULL)
+	if ((argv[2]) == NULL)
 		{
 		printf("Error\n");
-		return(99);
+		return (99);
 		}
 
 	if ((argv[3][0]) == 0 && ((argv[2][0]) == '%' || (argv[2][0]) == '/'))
 	{
 		printf("Error\n");
-		return(99);
+		return (99);
 	}
 	c = atoi(argv[1]);
 	d = atoi(argv[3]);
