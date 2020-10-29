@@ -30,5 +30,6 @@ while (i < 6)
 	}
 i++;
 }
-return (NULL);
+printf("error\n");
+return (99);
 }
