@@ -1,20 +1,25 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 
 /**
- * main - program
- *
- * Return: always 0
- */
+ * main - hexa numbers
+ * Return: 0
+*/
 
 int main(void)
 {
-	char i;
+	int i;
 
-	for (i = '0' ;  i <= '9' ; i++)
+	i = 0;
+
+	while (i <= 9)
 	{
-		putchar("%xi");
+		putchar(i + '0');
+	i++;
+	}
+	while (i <= 16)
+	{
+		putchar(i + 87);
+	i++;
 	}
 	putchar('\n');
 	return (0);
