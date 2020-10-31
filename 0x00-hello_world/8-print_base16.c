@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- *main - hexa numbers
- *Return: 0
+/**
+ * main - hexa numbers
+ * Return: 0
 */
 
 int main(void)
