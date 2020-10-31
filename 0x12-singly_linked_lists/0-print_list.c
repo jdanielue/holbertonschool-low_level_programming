@@ -3,7 +3,7 @@
 /**
  * print_list - singly linked list
  * @h: string - (malloc'ed string)
- *Return: number of nodes
+ *Return: number of nodes .
  */
 
 
@@ -15,7 +15,7 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str == NULL)
 		{
-			printf("[0] (nill)\n");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
