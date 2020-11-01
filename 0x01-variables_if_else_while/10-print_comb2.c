@@ -20,8 +20,8 @@ int main(void)
 		if (r != 100)
 		{
 		putchar(',');
-		}
 		putchar(32);
+		}
 		if (r == 100)
 		{
 		putchar('\n');
