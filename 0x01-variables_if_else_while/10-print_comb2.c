@@ -16,16 +16,17 @@ int main(void)
 		{
 		putchar(i + 48);
 		putchar(n + 48);
-		r++;
+		r = r +1;
+		if (r != 100)
+		{
+		putchar(',');
+		}
 		if (r % 24 == 0 || r == 100)
 		{
 			putchar('\n');
 		}
-		if (r != 100)
-		{
-		putchar(',');
+		if (r % 24 != 0)
 		putchar(32);
-		}
 		}
 	}
 	return (0);
