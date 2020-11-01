@@ -22,9 +22,9 @@ int main(void)
 		putchar(',');
 		}
 		putchar(32);
-		if (r % 24 == 0 || r == 100)
+		if (r == 100)
 		{
-			putchar('\n');
+		putchar('\n');
 		}
 		}
 	}
