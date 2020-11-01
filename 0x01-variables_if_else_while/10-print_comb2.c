@@ -17,14 +17,14 @@ int main(void)
 		putchar(i + 48);
 		putchar(n + 48);
 		r++;
+		if (r % 24 == 0 || r == 100)
+		{
+			putchar('\n');
+		}
 		if (r != 100)
 		{
 		putchar(',');
 		putchar(32);
-		}
-		if (r % 24 == 0 || r == 100)
-		{
-			putchar('\n');
 		}
 		}
 	}
