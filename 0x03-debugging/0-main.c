@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
-* main - tests function that prints if integer is positive or negative
+* positive_or_negative - integer is positive or negative
+*@i: number
 * Return: 0
 */
 
