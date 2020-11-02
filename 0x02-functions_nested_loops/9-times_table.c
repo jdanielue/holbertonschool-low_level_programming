@@ -10,12 +10,42 @@
 
 void times_table(void)
 {
-	int i, n;
+	int i, n, resultado, cociente, residuo;
 
 	for (i = 0 ; i <= 9 ; i++)
 	{
-		n = i * 9;
-		_putchar(n + '0');
-		_putchar('\n');
+		for (n = 0; n <= 9; n++)
+		{
+		resultado = i * n;
+		if (resultado >= 10 && n < 9)
+		{
+			residuo = resultado % 10;
+			cociente = resultado / 10;
+			_putchar(cociente + '0');
+			_putchar(residuo + '0');
+			_putchar(',');
+			_putchar(32);
+		}
+		if (resultado >= 10 && n == 9)
+		{
+			residuo = resultado % 10;
+			cociente = resultado / 10;
+			_putchar(cociente + '0');
+			_putchar(residuo + '0');
+			_putchar('\n');
+		}
+		if (resultado < 10 && n < 9)
+		{
+			_putchar(resultado + '0');
+			_putchar(',');
+			_putchar(32);
+			_putchar(32);
+		}
+		if (resultado < 10 && n == 9)
+		{
+			_putchar(resultado + '0');
+			_putchar('\n');
+		}
+		}
 	}
 }
