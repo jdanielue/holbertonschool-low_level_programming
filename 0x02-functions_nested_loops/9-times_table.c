@@ -34,11 +34,17 @@ void times_table(void)
 			_putchar(residuo + '0');
 			_putchar('\n');
 		}
-		if (resultado < 10 && n < 9)
+		if (resultado < 10 && n < 9 && n != 0)
 		{
+			_putchar(32);
 			_putchar(resultado + '0');
 			_putchar(',');
 			_putchar(32);
+		}
+		if (resultado < 10 && n < 9 && n == 0)
+		{
+			_putchar(resultado + '0');
+			_putchar(',');
 			_putchar(32);
 		}
 		if (resultado < 10 && n == 9)
