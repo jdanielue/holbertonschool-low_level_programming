@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * free_listint - check the code for Holberton School students.
+ * @head: pointer to the first element
+ * Return: no return.
  */
 
 void free_listint(listint_t *head)
@@ -13,10 +13,10 @@ void free_listint(listint_t *head)
 	clear = head;
 
 
-	 while (clear != NULL)
-	 {
-		 advance = clear->next;
-		 free (clear);
-		 clear = advance;
-	 }
+	while (clear != NULL)
+	{
+		advance = clear->next;
+		free(clear);
+		clear = advance;
+	}
 }
