@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint - singly linked list
+ * listint_len - singly linked list
  * @h: structure
  * Return: number of nodes
  */
