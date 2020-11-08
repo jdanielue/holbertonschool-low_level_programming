@@ -1,21 +1,39 @@
 #include "holberton.h"
 #include <stdio.h>
+int largo(char *cadena);
+/**
+ * largo - size of string.
+ * @cadena: string
+ * Return: size of string.
+ */
+int largo(char *cadena)
+{
+int n = 0;
 
+for (n = 0; *(cadena + n) != '\0'; n++)
+	;
+return (n);
+}
 /**
  * rev_string - check the code for Holberton School students.
- *
+ * @s: string
  * Return: Always 0.
  */
 void rev_string(char *s)
 {
-	int i, c;
-	char saux[100];
-	for (i = 0; s[i] != '\0'; i++)
+	int i, c, a = 0;
+
+	char copy[1000];
+
+	c = largo(s) - 1;
+	for (i = 0; i <= c; i++)
 	{
+		a++;
+		copy[i] = s[i];
 	}
-	c = i;
-	for (i = c; i >= 0; i--)
+
+	for (i = 0; i <= c; i++)
 	{
-		saux[c-i] = s[i];
+		s[i] = copy[c - i];
 	}
 }
