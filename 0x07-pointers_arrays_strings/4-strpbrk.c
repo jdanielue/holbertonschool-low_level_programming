@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *_strchr - copies memory area.
+ * _strpbrk - copies memory area.
  * @s: the address of memory to print
  * @accept: the source of the memory to print
  * Return: Nothing.
@@ -10,18 +10,19 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, j;
 
-	for (i = 0; *(s + i); i++)
+	for (i = 0; *(s + i) != '\0' ; i++)
 	{
-		if (*(s + i) == c)
+		for (j = 0; *(accept + j) != '\0' ; j++)
 		{
-			return (s + i);
+			if (*(s + i) == *(accept + j))
+			{
+				s = (s + i);
+				return (s);
+			}
 		}
 	}
-	if (*(s + i) == c)
-	{
-		return (s + i);
-	}
 	return (NULL);
+
 }
