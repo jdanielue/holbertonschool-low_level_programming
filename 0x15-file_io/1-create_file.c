@@ -29,5 +29,5 @@ int fd, i;
 
 		close(fd);
 
-	return (fd);
+	return (1);
 }
