@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - check the code for Holberton School students.
+ * add_dnodeint_end- check the code for Holberton School students.
  *@head: pointer to the first node
  *@n: value integer
  * Return: pointer to node.
  */
 
-dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *nodonuevo;
 
