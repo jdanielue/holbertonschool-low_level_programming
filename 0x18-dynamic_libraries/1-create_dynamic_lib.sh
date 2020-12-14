@@ -1,4 +1,4 @@
 #!/bin/bash
-gcc -FPIC -c *.c
+gcc -c *.c -FPIC
 wait $!
-gcc -shared -o liball.so
+gcc -shared -o liball.so *.o
