@@ -3,7 +3,7 @@
 /**
  * insert_dnodeint_at_index - check the code for Holberton School students.
  *@h: header
- *@idx: idk
+ *@idx: idknow
  *@n: index number
  * Return: pointer
  */
@@ -20,11 +20,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	for (i = 0; i < idx - 1; i++)
-	{
 		tmp = tmp->next;
-		advance = tmp;
-		advance = tmp->next;
-	}
+
+	advance = tmp->next;
 
 	nodonuevo->n = n;
 	nodonuevo->next = advance;
