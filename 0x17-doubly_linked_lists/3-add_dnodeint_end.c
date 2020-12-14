@@ -18,20 +18,17 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	nodonuevo->n = n;
 	nodonuevo->prev = NULL;
 	nodonuevo->next = NULL;
+	tmp = *head;
 	if (*head == NULL)
 	{
 		*head = nodonuevo;
-		tmp = *head;
 	}
 	else
 	{
-		while (tmp != NULL)
-		{
-			tmp->next = nodonuevo;
-			nodonuevo->prev = tmp;
-			tmp->next = tmp;
-		}
+		while (tmp->next != NULL)
+			tmp = tmp->next;
+	tmp->next = nodonuevo;
+	nodonuevo->prev = tmp;
 	}
-	printf("%d\n", nodonuevo->n);
 	return (nodonuevo);
 }
