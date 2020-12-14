@@ -12,12 +12,14 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *puntero;
 
 	puntero = head;
+	if (puntero == NULL)
+		return (NULL);
+
 
 	for (counter = 0; counter < index; counter++)
 	{
 		puntero = puntero->next;
 	}
-	if (puntero == NULL)
-		return (NULL);
+
 	return (puntero);
 }
