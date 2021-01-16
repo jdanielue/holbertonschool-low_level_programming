@@ -1,10 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_create - check the code for Holberton School students.
- * @size: size of array
- * Return: Always EXIT_SUCCESS.
- */
+* hash_table_create - check the code for Holberton School students.
+* @size: size of array
+* Return: pointer to the structure.
+*
+*/
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
