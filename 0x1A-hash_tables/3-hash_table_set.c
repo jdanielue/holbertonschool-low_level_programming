@@ -22,8 +22,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = key_index((const unsigned char *)key, ht->size);
 
-	pt_newnode->key = strdup(key);
-	pt_newnode->value = strdup(value);
+	pt_newnode->key = malloc(strlen(key) + 1);
+	pt_newnode->key = strcpy(pt_newnode->key, key);
+	pt_newnode->value = malloc(strlen(value) + 1);
+	pt_newnode->value = strcpy(pt_newnode->value, value);
 	pt_newnode->next = NULL;
 
 
