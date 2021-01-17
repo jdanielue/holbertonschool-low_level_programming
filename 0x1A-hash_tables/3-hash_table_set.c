@@ -23,10 +23,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *)key, ht->size);
 
 	
-	pt_newnode->key = strdup(key);
+	strcpy(pt_newnode->key, key);
 	if (pt_newnode->key == NULL)
 		return (0);
-	pt_newnode->value = strdup(value);
+	strcpy(pt_newnode->value, value);
 	if (pt_newnode->value == NULL)
 		return (0);
 	pt_newnode->next = NULL;
