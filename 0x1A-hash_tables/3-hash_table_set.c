@@ -40,7 +40,6 @@ hash_node_t *new_node(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *pt_newnode, *head, *temp;
 	unsigned long int index = 0;
 
-	pt_newnode = malloc(sizeof(hash_node_t));
 
 	index = key_index((const unsigned char *)key, ht->size);
 	head = *(ht->array + index);
@@ -52,10 +51,13 @@ hash_node_t *new_node(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(head->value);
 			head->value = strdup(value);
-			return (pt_newnode);
+			return (head);
 		}
 		head = head->next;
 	}
+
+	pt_newnode = malloc(sizeof(hash_node_t));
+	
 	pt_newnode->key = strdup(key);
 	pt_newnode->value = strdup(value);
 	pt_newnode->next = NULL;
