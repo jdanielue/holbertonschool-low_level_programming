@@ -4,4 +4,4 @@ CC = gcc main.c holberton.c -o holberton
 all: program
 
 program: $(SRS)
-		$(CC)
+	$(CC)
