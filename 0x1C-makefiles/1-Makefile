@@ -1,7 +1,5 @@
-SRS = main.c holberton.c
 CC = gcc
+SRC = main.c holberton.c
 
-all: program
-
-program: $(SRS)
+all: $(SRC)
 	$(CC) $(SRC) -o holberton
