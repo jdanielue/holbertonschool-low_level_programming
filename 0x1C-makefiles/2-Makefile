@@ -5,7 +5,6 @@ NAME = holberton
 RM = rm -f
 
 
-all: $(SRC)
-	$(CC) -c main.c -o main.o
-	$(CC) -c holberton.c -o holberton.o
+all: $(OBJ) $(SRC)
+	@$(CC) -c main.c -c holberton.c
 	$(CC) $(OBJ) -o $(NAME)
