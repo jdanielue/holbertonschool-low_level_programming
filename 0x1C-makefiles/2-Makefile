@@ -6,5 +6,5 @@ RM = rm -f
 
 
 all: $(OBJ) $(SRC)
-	@$(CC) -c main.c -c holberton.c
+	@$(CC) -c $(SRC)
 	$(CC) $(OBJ) -o $(NAME)
