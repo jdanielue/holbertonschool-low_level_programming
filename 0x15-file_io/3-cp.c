@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, read_result, write_result;
-	int close1, close2;
+	int close1, close2, i = 0;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	/*copy on the second file*/
-	while ((read_result = read(file_from, buffer, 1024) > 0))
+	while ((read_result = read(file_from, buffer, 1023) > 0))
 	{
 		if (read_result == -1)
 		{
@@ -46,6 +46,11 @@ int main(int argc, char *argv[])
 			close(file_to);
 			exit(99);
 		}
+        while (i < 1024)
+        {
+            buffer[i] = '\0';
+            i++;
+        }
 	}
 	close1 = close(file_from);
 	if (close1 == -1)
